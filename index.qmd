@@ -1,0 +1,120 @@
+---
+title: "Pengaruh pengangguran terhadap nilai PDB Indonesia"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Shabrina Kansa Aulia"
+date: 2023-01-20
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+![](poltekapp.jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Pengangguran menjadi bahasan sentral suatu negara dari tahun ke tahun sebab tingkat pengangguran menjadi salah satu indikator keberhasilan suatu negara khususnya pada negara Indonesia sebagai negara berkembang. Tingkat pengangguran berhubungan dengan jumlah penduduk, dengan semakin meningkatnya jumlah penduduk diperkirakan tingkat pengangguran semakin bertambah karena lapangan pekerjaan tidak mencukupi. Dengan semakin bertambahnya tingkat pengangguran maka berdampak negatif pada perekonomian suatu negara. Pengangguran dapat disebabkan oleh rendahnya kualitas sumber daya manusia yang dimiliki, lapangan pekerjaan tidak mencukupi, inflasi, ledakan penduduk, serta kelangkaan investasi yang menjadi salah satu faktor angka pengangguran bertambah.
+
+Menurut mazhab pemikiran, pengangguran berawal dari para perencana pembangunan yang berorientasi atau berfokus pada propasar dengan terlalu mengandalkan industri dan perusahaan besar semata, oleh dari itu usaha ekonomi rakyat kelas menengah dan kecil akan terkalahkan. Kemudian apabila terjadi krisis global dapat dipastikan produktivitas raksasa tersebut hancur dan rakyat menjadi pusat penderitaan atas segalanya. Dengan masalah tersebut terjadi, pemerintah barulah menanggapi pentingnya pertumbuhan ekonomi dari segala segi kelas. Suatu negara dapat dikatakan makmur apabila komponen didalamnya juga makmur, termasuk rakyatnya. Maka dari itu di dalam makro ekonomi, cara yang didapat suatu negara untuk memakmurkan rakyatnya dengan menggunakan tolak ukur dari Produk Domestik Bruto (PDB). Dengan tersedianya pendapatan pada rakyat, negara menjadi makmur dan pengangguran semakin berkurang seiring bertambah dan tersedianya pendapatan pada rakyat.
+
+Disamping itu, pemerintah diharap dan dituntut untuk mampu mengelola sumber daya yang tersedia dan membentuk pola kemitraan untuk menciptakan suatu lapangan pekerjaan baru dan merangsang perkembangan kegiatan ekonomi. Pembangunan ekonomi ditandai dengan adanya aktivitas perekonomian seperti meningkatnya produktivitas dan meningkatnya pendapatan per kapita penduduk sehingga terjadi perbaikan tingkat kesejahteraan (Kuncoro, 2004). Dari penjelasan diatas, penulis bermaksud untuk menguji pengaruh pengangguran terhadap Produk Domestik Bruto. Meskipun banyak studi yang mengatakan serta menunjukan bahwa hubungan antara pengangguran dan Produk Domestik Bruto berhubungan positif tetapi efek dari tenaga kerja yang tidak memiliki pekerjaan atau menganggur dengan Produk Domestik Bruto memiliki efek yang beragam. Atas dasar permasalahan tersebut, penelitian ini ingin mengetahui dampak serta pengaruh pengangguran terhadap GDP di Indonesia.
+
+### Ruang lingkup
+
+Penelitian ini bertujuan untuk melihat seberapa besar pengaruh Pengangguran terhadap PDB Indonesia. Data yang diambil sebagai bahan penelitian merupakan data pengangguran dari World Bank pada tahun 2010-2021 dan data PDB Indonesia diambil dari World Bank pada tahun 2010-2021.
+
+### Rumusan masalah
+
+1.  Bagaimana tingkat pengangguran di Indonesia dapat berpengaruh terhadap PDB Indoensia?
+
+### Tujuan dan manfaat penelitian
+
+Untuk mengetahui bagaimana pengaruh pengangguran di Indonesia dapat mempengaruhi nilai PDB Indonesia.
+
+## Studi pustaka
+
+Paper berjudul "Pengaruh Pengangguran terhadap GDP Indonesia" ini dibuat dengan merujuk pada tingkat tenaga kerja terbuka di Indonesia dan bagaimana dampak bagi PDB di Indonesia.
+
+Menurut data World Bank (2010-2021) ditemukan bahwa tingkat pengangguran tertinggi berada pada tahun 2010 dengan jumlah 5,6 dan tingkat pengangguran terendah berada pada tahun 2017 dan 2021 dengan jumlah 3,8.
+
+Sukirno (1994), pengangguran adalah suatu keadaan dimana seseorang yang termasuk dalam angkatan kerja ingin memperoleh pekerjaan akan tetapi belum mendapatkannya. Seseorang yang tidak bekerja namun tidak secara aktif mencari pekerjaan tidak tergolong sebagai pengangguran.
+
+Untuk itulah, jurnal ini dibuat untuk menanggapi bagaimana dampak pengaruh pengangguran terhadap nilai PDB Indonesia.
+
+## Metode penelitian
+
+### Data pengangguran dan GDP Indonesia
+
+| Tahun | Pengangguran | GDP               |
+|-------|--------------|-------------------|
+| 2010  | 5.6          | 755.090.000.000   |
+| 2011  | 5.2          | 892.970.000.000   |
+| 2012  | 4.5          | 917.870.000.000   |
+| 2013  | 4.3          | 912.520.000.000   |
+| 2014  | 4.1          | 890.810.000.000   |
+| 2015  | 4.5          | 860.850.000.000   |
+| 2016  | 4.3          | 931.880.000.000   |
+| 2017  | 3.8          | 1.020.000.000.000 |
+| 2018  | 4.4          | 1.040.000.000.000 |
+| 2019  | 3.6          | 1.120.000.000.000 |
+| 2020  | 4.3          | 1.060.000.000.000 |
+| 2021  | 4.8          | 1.190.000.000.000 |
+
+penelitian ini menggunakan data World Bank
+
+```{r}
+setwd("C:/Users/sarah/Downloads/UAS Metopel/UAS Metopel")
+library(readxl)
+dat<-read_excel('latihan.xlsx')
+reg1<-lm(Y~X,data=dat)
+plot(dat$Y,dat$X,xlab="Pengangguran",ylab="PDB")
+```
+
+### Metode analisis
+
+Metode analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analisis kuantitatif adalah analisis yang digunakan dalam perhitungan tingkat pengangguran dan nilai PDB Indonesia. Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini bermaksud untuk mencari hubungan antara tingkat pengangguran dan nilai PDB Indonesia. Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah nilai PDB Indonesia dan $x_t$ adalah tingkat pengangguran.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+| Variabel  | Coeficient | Std.Error | t.value | Prob     |
+|-----------|------------|-----------|---------|----------|
+| Intercept | 4.351e+07  | 1.638e+06 | 26.554  | 1.32e-10 |
+| X         | -3.249e-02 | 2.419e-02 | -1.343  | 0.209    |
+
+| R-Squared          | 0.1528   |
+|--------------------|----------|
+| Adjusted R-Squared | 4.351e+0 |
+| F-Statistic        | 1.804    |
+| Prob (F-statistic) | 0.2089   |
+
+Tingkat pengangguran berpengaruh terhadap nilai PDB Indonesia. Ditunjukan dengan dilihat dari nilai probabilitas X (PDB) yang signifikan. Dimana nilai PDB menjadi indikator keberhasilan serta kemakmuran suatu negara. Nilai koefisien PDB sebesar -3.249e-02 yang berarti tingkat rendah dan tingginya PDB berpengaruh terhadap pengangguran di Indonesia. Dengan hasil ini maka dapat disimpulkan bahwa tingkat PDB berpengaruh negatif terhadap pengangguran di Indonesia.
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+```{r}
+library(readxl)
+dat<-read_excel("latihan.xlsx")
+reg<-lm(Y~X,data=dat)
+summary(reg)
+```
+
+## Kesimpulan
+
+Berdasarkan data hasil analisis kuantitatif yang telah dilakukan, setelah diamati tingkat PDB berpengaruh signifikan terhadap tingkat pengangguran. Hal tersebut membuktikan sebuah negara akan makmur apabila tingkat PDB perkapita dari masing-masing rakyat pada suatu negara diatas rata-rata. Oleh sebab itu nilai PDB berpengaruh negatif terhadap tingkat pengangguran di Indonesia
+
+## Referensi
+
+*Unemployment, total (% of total labor force) (modeled ILO estimate)---Indonesia \| Data*. (t.t.). Diambil 19 Januari 2023, dari <https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2021&locations=ID&start=2010> *GDP (current US\$)---Indonesia \| Data*. (t.t.). Diambil 19 Januari 2023, dari <https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?end=2021&locations=ID&start=2009>
+
+Franita, R., & Fuady, A. (t.t.). *ANALISA PENGANGGURAN DI INDONESIA*. Mukaffi, Z. (2022). Pengaruh Pengangguran Dan Inflasi Terhadap Produk Domestik Bruto Indonesia. *ULIL ALBAB : Jurnal Ilmiah Multidisiplin*, *1*(4), Art. 4. Harjunawati, S., & Hendarsih, I. (2020). PENGARUH PENGANGGURAN DAN INFLASI TERHADAP PRODUK DOMESTIK BRUTO INDONESIA TAHUN 2009-2019. *Jurnal Pendidikan dan Kewirausahaan*, *7*(2), Art. 2. <https://doi.org/10.47668/pkwu.v7i2.27>
